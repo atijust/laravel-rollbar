@@ -1,0 +1,29 @@
+{
+    "name": "atijust/laravel-rollbar",
+    "description": "Rollbar integration for Laravel",
+    "keywords": ["laravel", "rollbar", "log", "debug", "error", "exception", "tracking", "monitoring"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TSUJITA shou",
+            "email": "tsujita.shou@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "rollbar/rollbar": "0.9.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "mockery/mockery": "0.9.*",
+        "orchestra/testbench": "2.2.*",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Atijust\\LaravelRollbar": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
