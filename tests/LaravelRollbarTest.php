@@ -9,7 +9,7 @@ class LaravelRollbarTest extends Orchestra\Testbench\TestCase
 
     protected function getPackageProviders()
     {
-        return ['Atijust\LaravelRollbar\LaravelRollbarServiceProvider'];
+        return array('Atijust\LaravelRollbar\LaravelRollbarServiceProvider');
     }
 
     public function testConfig()
@@ -30,10 +30,10 @@ class LaravelRollbarTest extends Orchestra\Testbench\TestCase
         $message = 'test';
 
         $notifier = Mockery::mock('RollbarNotifier');
-        $notifier->shouldReceive('report_message')->once()->with($message, 'info', []);
+        $notifier->shouldReceive('report_message')->once()->with($message, 'info', array());
         $this->app->instance('rollbar', $notifier);
 
-        Config::set('laravel-rollbar::config.excluded_levels', ['debug']);
+        Config::set('laravel-rollbar::config.excluded_levels', array('debug'));
 
         Log::info($message);
         Log::debug($message);
@@ -47,7 +47,7 @@ class LaravelRollbarTest extends Orchestra\Testbench\TestCase
         $notifier->shouldReceive('report_exception')->once()->with($exception);
         $this->app->instance('rollbar', $notifier);
 
-        Config::set('laravel-rollbar::config.excluded_levels', ['debug']);
+        Config::set('laravel-rollbar::config.excluded_levels', array('debug'));
 
         Log::info($exception);
         Log::debug($exception);
