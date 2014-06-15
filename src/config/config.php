@@ -1,5 +1,5 @@
 <?php
-return [
+return array(
     'access_token'    => '',
-    'excluded_levels' => [],
-];
+    'excluded_levels' => array(),
+);
