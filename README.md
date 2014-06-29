@@ -1,7 +1,7 @@
 Rollbar integration for Laravel
 ===============================
 
-[![Build Status](https://travis-ci.org/atijust/laravel-rollbar.svg?branch=master)](https://travis-ci.org/atijust/laravel-rollbar) [![Coverage Status](https://img.shields.io/coveralls/atijust/laravel-rollbar.svg)](https://coveralls.io/r/atijust/laravel-rollbar?branch=master)
+[![Build Status](https://travis-ci.org/atijust/laravel-rollbar.svg?branch=master)](https://travis-ci.org/atijust/laravel-rollbar) [![Coverage Status](https://img.shields.io/coveralls/atijust/laravel-rollbar.svg)](https://coveralls.io/r/atijust/laravel-rollbar?branch=master) [![Dependency Status](https://www.versioneye.com/user/projects/53b0083b404aa650dd000012/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53b0083b404aa650dd000012)
 
 Installation
 ------------
